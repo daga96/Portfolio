@@ -2,7 +2,7 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Main from "./Main";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+
 
 function App() {
   return (
