@@ -7,10 +7,12 @@
   font-size: 1.2rem;
   z-index: 1;
   position: relative;
-  background-color: transparent;
+  background-color: rgb(29, 29, 29);
   color: #ffffff;
   font-weight: 100;
-  position: sticky;
+  position: fixed;
+  -webkit-box-shadow: 0px 14px 29px 10px rgba(0,0,0,0.2); 
+box-shadow: 0px 14px 29px 10px rgba(0,0,0,0.2);
 }
 
 .navbarLinks ul {
@@ -39,13 +41,14 @@
   margin-left: 40px;
   letter-spacing: -4px;
   font-family: "Dosis", sans-serif;
-  font-size: 30px;
+  font-size: 40px;
   font-style: italic;
 }
 
 .navbarLogo a {
   text-decoration: none;
   color: white;
+  font-size: 30px;
 }
 .navbarLogo:hover a {
   color: #8b66f0;

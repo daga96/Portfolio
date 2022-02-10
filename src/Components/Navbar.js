@@ -1,20 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as LinkScroll } from 'react-scroll';
 import "./Navbar.css";
 
 export default function Navbar() {
+  
   return (
     <div className="navbarMain">
       <div className="navbarLogo">
-        <Link to="/Portfolio">Dagmara</Link>
+        <LinkScroll to="hero" smooth={true}> Dagmara</LinkScroll>
       </div>
       <div className="navbarLinks">
         <ul>
+       
+          <li className="link"> 
+          <LinkScroll to="about" smooth={true} activeClass="active" > About Me </LinkScroll></li>
           <li className="link">
-            <Link to="/about">About Me</Link>
-          </li>
-          <li className="link">My courses</li>
-          <li className="link">Projects</li>
+          <LinkScroll to="courses" smooth={true} >My courses </LinkScroll> </li>
+          <li className="link"> Projects </li>
           <li className="link">Contact Me</li>
         </ul>
       </div>

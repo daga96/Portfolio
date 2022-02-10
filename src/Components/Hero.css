@@ -1,3 +1,5 @@
+
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +10,7 @@ body {
 
 .Hero {
   width: 100%;
-  min-height: 90vh;
+  min-height: 100vh;
   overflow: hidden;
   position: relative;
   background: #1e1e1e;
@@ -17,7 +19,7 @@ body {
 
 h2 {
   position: absolute;
-  top: 40%;
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -25,6 +27,7 @@ h2 {
   font-size: 6em;
   color: transparent;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 h2 span:nth-child(1) {
@@ -76,7 +79,7 @@ h2:hover span:nth-child(3) {
 
 h5 {
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 34%;
   color: white;
   font-weight: 100;
