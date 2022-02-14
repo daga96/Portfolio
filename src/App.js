@@ -1,8 +1,7 @@
-import "./App.css";
-import Navbar from "./Navbar";
-import Main from "./Main";
+import Navbar from "./Components/Navbar";
+import Main from "./Components/Main";
+import UXdesign from "./Components/UXdesign";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 function App() {
   return (
@@ -10,7 +9,8 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/Portfolio" element={<Main />} />
+          <Route path="/" element={<Main />} />
+          <Route path="design" element={<UXdesign />} />
         </Routes>
       </Router>
     </>

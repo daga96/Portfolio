@@ -8,6 +8,7 @@
   letter-spacing: 1px;
   font-size: 15px;
   padding-top: 80px;
+  margin-left: 5vw;
 }
 .sectionTitle {
   display: flex;
@@ -17,13 +18,6 @@
   font-family: "Krona One", sans-serif;
 }
 
-img {
-  height: 550px;
-  width: 340px;
-}
-h3 {
-  font-family: "Krona One", sans-serif;
-}
 .sectionTitle::after {
   content: "";
   flex: 0.1;
@@ -33,15 +27,49 @@ h3 {
   background-color: #ffffff;
   opacity: 20%;
 }
+
+img {
+  height: 520px;
+  width: 340px;
+  margin-right: 30px;
+}
+
+h3 {
+  font-family: "Krona One", sans-serif;
+}
+hr {
+  width: 80px;
+  background-color: #ffffff;
+  opacity: 20%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
 .content {
-  margin: 2vw;
   padding-top: 50px;
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: center;
 }
-
+.descSpan {
+  position: absolute;
+  left: 550px;
+  font-family: "Krona One", sans-serif;
+  font-size: 40px;
+}
+.descSpan1 {
+  position: absolute;
+  left: 550px;
+  top: 280px;
+  font-family: "Krona One", sans-serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+.smallDesc {
+  margin-top: 140px;
+}
 .description {
   margin-left: 10px;
   width: 40%;

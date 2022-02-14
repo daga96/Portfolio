@@ -33,13 +33,16 @@ export default function Navbar() {
               About Me{" "}
             </LinkScroll>
           </li>
+          <li className="link"> My courses</li>
           <li className="link">
-            <LinkScroll to="courses" smooth={true}>
-              My courses{" "}
+            <Link to="/design">UX Design</Link>
+          </li>
+          <li className="link">Frontend Projects</li>
+          <li className="link">
+            <LinkScroll to="contact" smooth={true}>
+              Contact Me{" "}
             </LinkScroll>{" "}
           </li>
-          <li className="link"> Projects </li>
-          <li className="link">Contact Me</li>
         </ul>
       </div>
     </div>

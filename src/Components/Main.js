@@ -1,12 +1,13 @@
 import Hero from "./Hero";
 import About from "./About";
-import Courses from "./Courses";
+import Footer from "./Footer";
 
 function Main() {
   return (
     <div className="Main">
       <Hero />
       <About />
+      <Footer />
     </div>
   );
 }

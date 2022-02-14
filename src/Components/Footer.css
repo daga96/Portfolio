@@ -1,0 +1,56 @@
+.footerMain {
+  height: 50vh;
+  width: 100vw;
+  background: #202020;
+  color: #dee2e6;
+  margin-left: 5vw;
+}
+
+.contentWraper {
+  display: flex;
+  align-items: center;
+}
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+  font-size: 25px;
+  font-family: "Krona One", sans-serif;
+}
+
+.sectionTitle::after {
+  content: "";
+  flex: 0.1;
+  margin-left: 1rem;
+  height: 1px;
+  width: 10px;
+  background-color: #ffffff;
+  opacity: 20%;
+}
+
+.logo {
+  margin: 120px;
+}
+
+.contactWork {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 200px;
+  position: relative;
+}
+
+#aboutContact {
+  display: inline-block;
+  list-style: none;
+  text-align: left;
+}
+#aboutContact > li {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+#socialContact {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}

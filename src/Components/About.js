@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import photo from "../photo.jpg";
 
 const About = () => {
   return (
@@ -7,54 +8,23 @@ const About = () => {
       <h3 className="sectionTitle">About</h3>
       <div className="content">
         <div className="profilePhoto">
-          <img src={process.env.PUBLIC_URL + "photo.jpg"} />
+          <img src={photo} alt="photo" id="photo" />
         </div>
 
         <div className="description">
-          Based in South Korea, originaly from Poland. I am frontend developer
-          and fresh graduate from Korea University majoring in Computer Science
-          and Engineering and Language, Brain and Computers. I am passionate
-          about web design, gaming, animations, languages, and learning.
+          <span className="descSpan">Frontend developer </span>
+          <span className="descSpan1">and UX designer.</span>
+
+          <div className="smallDesc">
+            <hr></hr>I like to create interesting designs and interactive user
+            interfaces for web products. Recently graduated Korea University
+            majoring Computer Science and Engineering and Language, Brain and
+            Computer.
+          </div>
           <h3>Skills</h3>
           <ul>
-            <li>Frontend development, UX/UI design</li>
             <li>JavaScript, CSS, HTML, ReactJS</li>
             <li>AdobeXD, Figma</li>
-          </ul>
-          <h3>Contact</h3>
-          <ul id="aboutContact">
-            <li>
-              <a
-                href="https://www.linkedin.com/in/dagmara-luk/"
-                target="_blank"
-                rel="noreferrer"
-                title="LinkedIn"
-              >
-                <img
-                  className="icon"
-                  src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://github.com/daga96"
-                target="_blank"
-                rel="noreferrer"
-                title="Github"
-              >
-                <img
-                  className="icon"
-                  src="https://img.icons8.com/material-rounded/24/ffffff/github.png"
-                />
-              </a>
-            </li>
-            <li>
-              <span>
-                {" "}
-                Download my <button id="resume">resume</button>
-              </span>
-            </li>
           </ul>
         </div>
       </div>

@@ -1,0 +1,15 @@
+.uxMain {
+  width: 100vw;
+  height: auto;
+}
+.number {
+  font-family: "Krona One", sans-serif;
+  font-size: 150px;
+  line-height: 0.85em;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  display: block;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(F, F, F, F.14);
+}

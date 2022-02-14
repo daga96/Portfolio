@@ -10,7 +10,7 @@ const Hero = () => {
           Dagmara
           <span>Dagmara</span>
           <span>Dagmara</span>
-          <span> Hi, I'am frontend developer and UX Designer. </span>
+          <span>frontend developer and UX Designer. </span>
         </h2>
       </div>
     </div>
