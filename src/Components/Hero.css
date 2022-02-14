@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: rgb(29, 29, 29);
+  background: #202020;
   height: 100%;
 }
 
@@ -11,13 +11,12 @@ body {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  background: #1e1e1e;
   color: #ffffff;
 }
 
 h2 {
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
@@ -26,6 +25,7 @@ h2 {
   color: transparent;
   text-transform: uppercase;
   cursor: pointer;
+  font-family: "Krona One", sans-serif;
 }
 
 h2 span:nth-child(1) {
@@ -38,7 +38,7 @@ h2 span:nth-child(1) {
   overflow: hidden;
 }
 h2:hover span:nth-child(1) {
-  transform: translateY(-18px);
+  transform: translateY(-50px);
 }
 
 h2 span:nth-child(2) {
@@ -52,7 +52,7 @@ h2 span:nth-child(2) {
 }
 
 h2:hover span:nth-child(2) {
-  transform: translateY(18px);
+  transform: translateY(50px);
 }
 
 h2 span:nth-child(3) {
@@ -62,13 +62,11 @@ h2 span:nth-child(3) {
   transform: translateY(-50%) scaleY(0);
   width: 90%;
   color: white;
-  background-color: #8b66f0;
   letter-spacing: 10px;
   font-size: 0.25em;
-  text-transform: lowercase;
+  text-transform: uppercase;
   text-align: center;
-  font-style: italic;
-  font-family: "Dosis", sans-serif;
+  font-family: "Krona One", sans-serif;
   transition: 0.5s;
 }
 h2:hover span:nth-child(3) {
@@ -77,8 +75,8 @@ h2:hover span:nth-child(3) {
 
 h5 {
   position: absolute;
-  top: 25%;
-  left: 34%;
+  top: 20%;
+  left: 30%;
   color: white;
   font-weight: 100;
   font-size: 40px;
@@ -86,14 +84,22 @@ h5 {
   font-family: "Dosis", sans-serif;
 }
 
+.seeMore {
+  position: absolute;
+  width: 350px;
+  height: 50px;
+  top: 70%;
+  background: none;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  color: #000000;
+}
 
 @media screen and (max-width: 400px) {
-  h5{
-   
+  h5 {
     margin-bottom: 30px;
   }
   h2 {
     font-size: 3em;
   }
- }
- 
+}

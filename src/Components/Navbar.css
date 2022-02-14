@@ -7,12 +7,9 @@
   font-size: 1.2rem;
   z-index: 1;
   position: relative;
-  background-color: rgb(29, 29, 29);
   color: #ffffff;
   font-weight: 100;
   position: fixed;
-  -webkit-box-shadow: 0px 14px 29px 10px rgba(0,0,0,0.2); 
-box-shadow: 0px 14px 29px 10px rgba(0,0,0,0.2);
 }
 
 .navbarLinks ul {
@@ -20,7 +17,7 @@ box-shadow: 0px 14px 29px 10px rgba(0,0,0,0.2);
   display: flex;
   flex-direction: row;
   position: absolute;
-  right: 35%;
+  right: 5%;
   top: 0px;
   cursor: pointer;
 }
@@ -34,13 +31,13 @@ box-shadow: 0px 14px 29px 10px rgba(0,0,0,0.2);
 }
 
 .link:hover a {
-  color: #8b66f0;
+  color: #ead54f;
 }
 
 .navbarLogo {
-  margin-left: 40px;
+  margin-left: 50px;
   letter-spacing: -4px;
-  font-family: "Dosis", sans-serif;
+  font-family: "Nova Round", cursive;
   font-size: 40px;
   font-style: italic;
 }
@@ -49,10 +46,4 @@ box-shadow: 0px 14px 29px 10px rgba(0,0,0,0.2);
   text-decoration: none;
   color: white;
   font-size: 30px;
-}
-.navbarLogo:hover a {
-  color: #8b66f0;
-  cursor: pointer;
-  letter-spacing: normal;
-  transition: 0.5s;
 }
