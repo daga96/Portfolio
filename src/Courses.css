@@ -1,0 +1,59 @@
+.mainCourses {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: #1e1e1e;
+  color: #dee2e6;
+  font-family: Roboto Mono, monospace;
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.sectionTitle {
+  margin-left: 5vw;
+  font-size: 25px;
+}
+
+.type {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  padding: 3rem;
+  place-items: center;
+  column-gap: 2rem;
+  row-gap: 3rem;
+}
+
+.card {
+  border-radius: 10px;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.card > img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #8b66f0;
+  font-size: 18px;
+}
+a:hover {
+  color: #593ea3;
+}
+
+.coursesList {
+  list-style: none;
+}
+
+.coursesList > li {
+  margin: 5%;
+}
