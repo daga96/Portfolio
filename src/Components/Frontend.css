@@ -1,0 +1,59 @@
+.frontMain {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  overflow: hidden;
+}
+.contentWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#titleSec2 {
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+.picture {
+  width: 550px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  padding-top: 100px;
+}
+.projectTags {
+  display: flex;
+  color: var(--elements);
+  justify-content: right;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: right;
+}
+
+.projectLinks {
+  display: flex;
+  justify-content: right;
+}
+.line {
+  width: 80px;
+  background-color: #ffffff;
+  opacity: 20%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid;
+  margin-right: 0px;
+}

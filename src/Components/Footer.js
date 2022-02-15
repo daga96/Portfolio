@@ -39,6 +39,7 @@ const Footer = () => {
             >
               <img
                 className="icon"
+                alt="linkedin"
                 src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png"
               />
             </a>
@@ -52,6 +53,7 @@ const Footer = () => {
             >
               <img
                 className="icon"
+                alt="github"
                 src="https://img.icons8.com/material-rounded/24/ffffff/github.png"
               />
             </a>

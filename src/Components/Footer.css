@@ -1,7 +1,7 @@
 .footerMain {
   height: 50vh;
-  width: 100vw;
-  background: #202020;
+  width: 90vw;
+  background: var(--background);
   color: #dee2e6;
   margin-left: 5vw;
 }

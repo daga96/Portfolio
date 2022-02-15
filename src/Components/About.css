@@ -3,8 +3,8 @@
   min-height: 100vh;
   overflow: hidden;
   position: relative;
-  background: #202020;
-  color: #dee2e6;
+  background: var(--background);
+  color: var(--font);
   letter-spacing: 1px;
   font-size: 15px;
   padding-top: 80px;
@@ -58,7 +58,36 @@ hr {
   left: 550px;
   font-family: "Krona One", sans-serif;
   font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--elements);
 }
+
+.descSpan::before {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: var(--elements);
+  overflow: hidden;
+  position: absolute;
+  content: attr(data-text);
+  white-space: nowrap;
+  border-right: 1px solid var(--elements);
+  -webkit-text-stroke: 0vw var(--elements);
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    width: 0%;
+  }
+
+  80% {
+    width: 100%;
+  }
+}
+
 .descSpan1 {
   position: absolute;
   left: 550px;
@@ -116,6 +145,10 @@ ul {
   height: 300px;
   border-radius: 50%;
   transform: rotate(-5deg);
+}
+
+.colored {
+  color: var(--elements);
 }
 
 @media screen and (max-width: 900px) {

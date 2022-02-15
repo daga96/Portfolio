@@ -12,14 +12,17 @@ const About = () => {
         </div>
 
         <div className="description">
-          <span className="descSpan">Frontend developer </span>
+          <span className="descSpan" data-text="Front-end developer">
+            Front-end developer
+          </span>
           <span className="descSpan1">and UX designer.</span>
 
           <div className="smallDesc">
-            <hr></hr>I like to create interesting designs and interactive user
-            interfaces for web products. Recently graduated Korea University
-            majoring Computer Science and Engineering and Language, Brain and
-            Computer.
+            <hr></hr>I like to create interesting{" "}
+            <span className="colored">designs</span> and interactive{" "}
+            <span className="colored">user interfaces</span> for web products.
+            Recently graduated Korea University majoring Computer Science and
+            Engineering and Language, Brain and Computer.
           </div>
           <h3>Skills</h3>
           <ul>

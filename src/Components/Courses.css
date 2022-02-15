@@ -1,0 +1,56 @@
+.coursesMain {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: var(--background);
+  color: var(--font);
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding-top: 80px;
+  margin-left: 5vw;
+}
+
+.contentWrap {
+  display: flex;
+  margin-left: 5vw;
+}
+
+.coursesList {
+  display: inline-block;
+  list-style: none;
+  margin-left: 1vw;
+}
+
+.coursesList > li {
+  margin-bottom: 10px;
+}
+li > a {
+  text-decoration: none;
+  color: var(--font);
+}
+
+li:hover > a {
+  cursor: pointer;
+  color: var(--elements);
+}
+.coursesList > li::before {
+  content: "▸";
+  position: relative;
+  left: -5px;
+  color: var(--elements);
+  line-height: 12px;
+}
+
+.subTitle {
+  text-transform: uppercase;
+}
+
+.institutionName {
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.date {
+  margin-left: 20px;
+}

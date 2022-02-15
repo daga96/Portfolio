@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: #202020;
+  background: var(--background);
   height: 100%;
 }
 
@@ -61,7 +61,7 @@ h2 span:nth-child(3) {
   left: 20px;
   transform: translateY(-50%) scaleY(0);
   width: 90%;
-  color: white;
+  color: var(--font);
   letter-spacing: 10px;
   font-size: 0.25em;
   text-transform: uppercase;
@@ -73,11 +73,11 @@ h2:hover span:nth-child(3) {
   transform: translateY(-50%) scaleY(1);
 }
 
-h5 {
+.helloText {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 30%;
-  color: white;
+  color: var(--elements);
   font-weight: 100;
   font-size: 40px;
   font-style: italic;
