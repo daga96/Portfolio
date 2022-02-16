@@ -1,10 +1,11 @@
 import React from "react";
 import "./Footer.css";
+import { SectionTitle } from "../UXPages/Layout";
 
 const Footer = () => {
   return (
     <div className="footerMain" id="contact">
-      <h3 className="sectionTitle">Connect with me</h3>
+      <SectionTitle> Connect with me </SectionTitle>
       <div className="contentWraper">
         <div className="logo">
           <svg

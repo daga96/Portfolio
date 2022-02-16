@@ -1,5 +1,4 @@
 .footerMain {
-  height: 50vh;
   width: 90vw;
   background: var(--background);
   color: #dee2e6;
@@ -9,23 +8,6 @@
 .contentWraper {
   display: flex;
   align-items: center;
-}
-.sectionTitle {
-  display: flex;
-  align-items: center;
-  margin-left: 5vw;
-  font-size: 25px;
-  font-family: "Krona One", sans-serif;
-}
-
-.sectionTitle::after {
-  content: "";
-  flex: 0.1;
-  margin-left: 1rem;
-  height: 1px;
-  width: 10px;
-  background-color: #ffffff;
-  opacity: 20%;
 }
 
 .logo {

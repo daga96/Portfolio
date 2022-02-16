@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./UXdesign.css";
 import wallet from "../wallet.png";
 import payment from "../payment.png";
@@ -9,6 +10,7 @@ import settings from "../settings.png";
 import music from "../music.png";
 import signin from "../signin.png";
 import mis from "../mis.png";
+import { GalleryItem } from "../UXPages/Layout";
 
 const UXdesign = () => {
   return (
@@ -16,139 +18,66 @@ const UXdesign = () => {
       <h3 className="sectionTitle" id="titleSec">
         UX Challenge
       </h3>
+      <p>Some of the designs I created for the 30 Day UX Challenge.</p>
+
       <div className="gallery">
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={wallet}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">01</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Wallet App</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={payment}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">02</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Payment Screen</span>
-            </div>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={profile}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">03</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Social Profile</span>
-            </div>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={dnd}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">04</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Landing Page</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={zeus}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">05</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Product Page</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={settings}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">06</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Settings Page</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={music}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">07</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Music Player</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={signin}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">08</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Sign In</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="gallery-item">
-          <img
-            className="gallery-image"
-            src={mis}
-            alt="product page for watch"
-          />
-          <div className="overlay">
-            <div className="textPhoto">
-              <span className="number">09</span>
-              <span className="titleSmall">UX Challenge</span>
-              <span className="pieceTitle">Others</span>
-            </div>
-          </div>
-        </div>
+        <GalleryItem
+          src={wallet}
+          alt="Financial App"
+          number="01"
+          title="Wallet App"
+          link="one"
+        ></GalleryItem>
+        <GalleryItem
+          src={payment}
+          alt="Payment and Checkout Screen"
+          number="02"
+          title="Payment Screen"
+          link="two"
+        ></GalleryItem>
+        <GalleryItem
+          src={profile}
+          alt="Social Profile"
+          number="03"
+          title="Social Profile"
+          link="three"
+        ></GalleryItem>
+        <GalleryItem
+          src={dnd}
+          alt="Tabletop Landning Page"
+          number="04"
+          title="Landing Page"
+        ></GalleryItem>
+        <GalleryItem
+          src={zeus}
+          alt="Product page for watch"
+          number="05"
+          title="Product Page"
+        ></GalleryItem>
+        <GalleryItem
+          src={settings}
+          alt="Settings pages"
+          number="06"
+          title="Settings pages"
+        ></GalleryItem>
+        <GalleryItem
+          src={music}
+          alt="Music Player"
+          number="07"
+          title="Music Player"
+        ></GalleryItem>
+        <GalleryItem
+          src={signin}
+          alt="Sign In Screen"
+          number="08"
+          title="Sign In"
+        ></GalleryItem>
+        <GalleryItem
+          src={mis}
+          alt="Other designs"
+          number="09"
+          title="Others"
+        ></GalleryItem>
       </div>
     </div>
   );

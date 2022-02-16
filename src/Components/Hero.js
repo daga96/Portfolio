@@ -6,7 +6,7 @@ const Hero = () => {
     <div className="Hero" id="hero">
       <div className="text">
         <h5 className="helloText">Hello, I'm</h5>
-        <h2>
+        <h2 className="nameClass">
           Dagmara
           <span>Dagmara</span>
           <span>Dagmara</span>

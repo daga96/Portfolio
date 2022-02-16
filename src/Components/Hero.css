@@ -14,7 +14,7 @@ body {
   color: #ffffff;
 }
 
-h2 {
+.nameClass {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,7 +28,7 @@ h2 {
   font-family: "Krona One", sans-serif;
 }
 
-h2 span:nth-child(1) {
+.nameClass span:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,11 +37,11 @@ h2 span:nth-child(1) {
   clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
   overflow: hidden;
 }
-h2:hover span:nth-child(1) {
+.nameClass:hover span:nth-child(1) {
   transform: translateY(-50px);
 }
 
-h2 span:nth-child(2) {
+.nameClass span:nth-child(2) {
   position: absolute;
   top: 0;
   left: 0;
@@ -51,11 +51,11 @@ h2 span:nth-child(2) {
   overflow: hidden;
 }
 
-h2:hover span:nth-child(2) {
+.nameClass:hover span:nth-child(2) {
   transform: translateY(50px);
 }
 
-h2 span:nth-child(3) {
+.nameClass span:nth-child(3) {
   position: absolute;
   top: 50%;
   left: 20px;
@@ -69,7 +69,7 @@ h2 span:nth-child(3) {
   font-family: "Krona One", sans-serif;
   transition: 0.5s;
 }
-h2:hover span:nth-child(3) {
+.nameClass:hover span:nth-child(3) {
   transform: translateY(-50%) scaleY(1);
 }
 
@@ -99,7 +99,7 @@ h2:hover span:nth-child(3) {
   h5 {
     margin-bottom: 30px;
   }
-  h2 {
+  .nameClass {
     font-size: 3em;
   }
 }

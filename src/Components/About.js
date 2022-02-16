@@ -1,17 +1,18 @@
 import React from "react";
 import "./About.css";
 import photo from "../photo.jpg";
+import { SectionTitle } from "../UXPages/Layout";
 
 const About = () => {
   return (
     <div className="aboutMain" id="about">
-      <h3 className="sectionTitle">About</h3>
+      <SectionTitle> About </SectionTitle>
       <div className="content">
         <div className="profilePhoto">
           <img src={photo} alt="photo" id="photo" />
         </div>
 
-        <div className="description">
+        <div className="descriptionAbout">
           <span className="descSpan" data-text="Front-end developer">
             Front-end developer
           </span>

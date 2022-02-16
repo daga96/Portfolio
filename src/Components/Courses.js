@@ -1,14 +1,15 @@
 import React from "react";
 import "./Courses.css";
+import { SectionTitle, SubTitle } from "../UXPages/Layout";
 
 const Courses = () => {
   return (
     <div className="coursesMain" id="courses">
-      <h3 className="sectionTitle">Courses</h3>
+      <SectionTitle>Courses</SectionTitle>
 
       <div className="contentWrap">
         <div className="contentLeft">
-          <h4 className="subTitle">Offline and Univeristy Courses</h4>
+          <SubTitle>Offline and Univeristy Courses</SubTitle>
           <ul className="coursesList">
             <li>
               IT Essentials: PC Hardware and Software
@@ -42,7 +43,11 @@ const Courses = () => {
           <h4 className="subTitle">Online Courses and Certifications</h4>
           <ul className="coursesList">
             <li>
-              <a href="https://www.hackerrank.com/certificates/57822a330163">
+              <a
+                href="https://www.hackerrank.com/certificates/57822a330163"
+                target="_blank"
+                rel="noreferrer"
+              >
                 JavaScript(Basic and Intermediate)
               </a>
               <span className="institutionName">HackerRank</span>
@@ -50,35 +55,55 @@ const Courses = () => {
               <span className="date"> Jan 2022</span>
             </li>
             <li>
-              <a href="https://www.freecodecamp.org/certification/fccd46ad565-3ccc-47ea-b2a3-7dbf369aaa06/responsive-web-design">
+              <a
+                href="https://www.freecodecamp.org/certification/fccd46ad565-3ccc-47ea-b2a3-7dbf369aaa06/responsive-web-design"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Responsive Web Design
               </a>
               <span className="institutionName"> freeCodeCamp</span>
               <span className="date">Feb 2022</span>
             </li>
             <li>
-              <a href="https://www.studysection.com/users/socialMedia/NDkyMjk4/ZGFnYWx1azk2QGdtYWlsLmNvbQ==">
+              <a
+                href="https://www.studysection.com/users/socialMedia/NDkyMjk4/ZGFnYWx1azk2QGdtYWlsLmNvbQ=="
+                target="_blank"
+                rel="noreferrer"
+              >
                 React 16.x (Foundation)
               </a>
               <span className="institutionName">StudySection</span>
               <span className="date">Feb 2022</span>
             </li>
             <li>
-              <a href="https://freecodecamp.org/certification/fccd46ad565-3ccc-47ea-b2a3-7dbf369aaa06/javascript-algorithms-and-data-structures">
+              <a
+                href="https://freecodecamp.org/certification/fccd46ad565-3ccc-47ea-b2a3-7dbf369aaa06/javascript-algorithms-and-data-structures"
+                target="_blank"
+                rel="noreferrer"
+              >
                 JavaScript Algorithms and Data Structures
               </a>
               <span className="institutionName"> freeCodeCamp</span>
               <span className="date">Feb 2022</span>
             </li>
             <li>
-              <a href="https://www.futurelearn.com/certificates/gtp4fcc">
+              <a
+                href="https://www.futurelearn.com/certificates/gtp4fcc"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Digital Skills: User Experience
               </a>
               <span className="institutionName">Accenture</span>
               <span className="date">Feb 2022</span>
             </li>
             <li>
-              <a href="https://www.studysection.com/users/socialMedia/NDkyMjg4/ZGFnYWx1azk2QGdtYWlsLmNvbQ==">
+              <a
+                href="https://www.studysection.com/users/socialMedia/NDkyMjg4/ZGFnYWx1azk2QGdtYWlsLmNvbQ=="
+                target="_blank"
+                rel="noreferrer"
+              >
                 CSS (Foundation and Advanced)
               </a>
               <span className="institutionName">StudySection</span>
