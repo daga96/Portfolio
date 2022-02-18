@@ -1,17 +1,11 @@
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  background: var(--background);
-  height: 100%;
-}
-
 .Hero {
   width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
+  height: 100vh;
   position: relative;
+  display: flex;
+  justify-content: center;
   color: #ffffff;
+  animation: transitionIn 1s;
 }
 
 .nameClass {
@@ -74,9 +68,8 @@ body {
 }
 
 .helloText {
-  position: absolute;
-  top: 10%;
-  left: 30%;
+  position: relative;
+  top: 15%;
   color: var(--elements);
   font-weight: 100;
   font-size: 40px;
@@ -84,20 +77,10 @@ body {
   font-family: "Dosis", sans-serif;
 }
 
-.seeMore {
-  position: absolute;
-  width: 350px;
-  height: 50px;
-  top: 70%;
-  background: none;
-  border: 1px solid #000000;
-  border-radius: 5px;
-  color: #000000;
-}
-
-@media screen and (max-width: 400px) {
-  h5 {
-    margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .helloText {
+    font-size: 30px;
+    top: 25%;
   }
   .nameClass {
     font-size: 3em;

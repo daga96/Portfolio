@@ -32,7 +32,7 @@ const UXdesign = () => {
           src={payment}
           alt="Payment and Checkout Screen"
           number="02"
-          title="Payment Screen"
+          title="Pay Screen"
           link="two"
         ></GalleryItem>
         <GalleryItem
@@ -44,27 +44,31 @@ const UXdesign = () => {
         ></GalleryItem>
         <GalleryItem
           src={dnd}
-          alt="Tabletop Landning Page"
+          alt="Tabletop Landing Page"
           number="04"
           title="Landing Page"
+          link="four"
         ></GalleryItem>
         <GalleryItem
           src={zeus}
           alt="Product page for watch"
           number="05"
           title="Product Page"
+          link="five"
         ></GalleryItem>
         <GalleryItem
           src={settings}
           alt="Settings pages"
           number="06"
           title="Settings pages"
+          link="six"
         ></GalleryItem>
         <GalleryItem
           src={music}
           alt="Music Player"
           number="07"
           title="Music Player"
+          link="seven"
         ></GalleryItem>
         <GalleryItem
           src={signin}

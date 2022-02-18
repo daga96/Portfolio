@@ -1,19 +1,5 @@
 import React, { useState } from "react";
 import "./Layout.css";
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Fade,
-  FadeIn,
-  Move,
-  MoveIn,
-  MoveOut,
-  Sticky,
-  StickyIn,
-  ZoomIn,
-} from "react-scroll-motion";
 
 export const SectionTitle = ({ children }) => {
   return <h3 className="sectionTitle">{children}</h3>;
@@ -52,10 +38,14 @@ export const ProjectPage = ({
   src2,
   alt2,
   subSection,
+  fontNameH,
+  fontNameSH,
   fontName,
   colors,
   next,
   prev,
+  screens,
+  tools,
 }) => {
   return (
     <div className="projectMain">
@@ -65,6 +55,7 @@ export const ProjectPage = ({
         </div>
         <div className="projectDescription">
           <h3 className="uxTitle">UX Challenge {number}</h3>
+          <hr className="separator"></hr>
           <div className="projectTitle">{title}</div>
           <ul className="tagList">
             {children.map(function (item) {
@@ -74,10 +65,27 @@ export const ProjectPage = ({
         </div>
       </div>
       <div className="detailedDescription">
-        <SectionTitle>About the project</SectionTitle>
-        <h4 className="subText">{subText}</h4>
-        <div className="textDesc">{text}</div>
-        <img src={src2} alt={alt2} className="imageBig"></img>
+        <div className="aboutPr">
+          <SectionTitle>About the project</SectionTitle>
+          <h4 className="subText">{subText}</h4>
+          <div className="textDesc">{text}</div>
+          <div className="uxDetails">
+            <h4>Deliverables:</h4> {screens}
+            <h4>Tools:</h4>{" "}
+            <ul className="toolsList">
+              {tools.map(function (item) {
+                return <li>{item}</li>;
+              })}
+            </ul>
+          </div>
+        </div>
+
+        <div className="mockupImg">
+          <img src={src2} alt={alt2} className="imageBig"></img>
+        </div>
+      </div>
+      <div className="fullClass">
+        <img src={src1} alt={alt2} className="imageFull"></img>
       </div>
       <div className="visualIdentity">
         <SectionTitle>Visual Identity</SectionTitle>
@@ -85,9 +93,24 @@ export const ProjectPage = ({
         <div className="contentVisual">
           <div className="left">
             <SubTitle>TYPOGRAPHY</SubTitle>
-            <span className="headerFont">Aa {fontName}</span>
-            <span className="subFont">Aa {fontName}</span>
-            <span className="normalFont">Aa {fontName}</span>
+            <span
+              className="headerFont"
+              style={{ fontFamily: fontNameH + ", sans-serif" }}
+            >
+              Aa {fontNameH}
+            </span>
+            <span
+              className="subFont"
+              style={{ fontFamily: fontNameH + ", sans-serif" }}
+            >
+              Aa {fontNameSH}
+            </span>
+            <span
+              className="normalFont"
+              style={{ fontFamily: fontNameH + ", sans-serif" }}
+            >
+              Aa {fontName}
+            </span>
           </div>
           <div className="right">
             <SubTitle>COLORS</SubTitle>

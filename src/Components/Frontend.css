@@ -5,6 +5,7 @@
 
   margin-right: 5vw;
   overflow: hidden;
+  animation: transitionIn 1s;
 }
 .contentWrap {
   display: flex;

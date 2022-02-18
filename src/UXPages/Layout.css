@@ -21,7 +21,7 @@
 }
 
 .gallery-item {
-  flex: 1 0 24rem;
+  flex: 1 0 20rem;
   margin: 1rem;
   overflow: hidden;
   position: relative;
@@ -86,18 +86,23 @@
 /*Project CSS*/
 
 .projectMain {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  overflow-y: visible;
   position: relative;
   background: var(--background);
   color: var(--font);
   letter-spacing: 1px;
   font-size: 15px;
   padding-top: 80px;
+  animation: transitionIn 1s;
 }
 
 .projectWrapper {
+  margin-top: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -113,21 +118,31 @@
   flex-direction: column;
   text-align: right;
 }
+
 .uxTitle {
   position: relative;
   font-family: "Krona One", sans-serif;
   font-size: 40px;
   color: var(--font);
-}
-.projectTitle {
-  font-size: 18px;
+  margin-right: 20px;
 }
 
+.projectTitle {
+  font-style: italic;
+  font-weight: 100;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.separator {
+  margin-right: 20px;
+}
 .tagList {
   display: flex;
   color: var(--elements);
   justify-content: right;
   list-style: none;
+  margin-top: 10%;
 }
 
 .textDesc {
@@ -137,7 +152,7 @@
 
 .textDesc,
 .subText {
-  width: 50vw;
+  width: 40vw;
   height: auto;
   letter-spacing: 1px;
   line-height: 30px;
@@ -148,21 +163,32 @@
   color: var(--elements);
 }
 
-.imageBig {
-  position: absolute;
-  top: 70vh;
-  right: 15vw;
-  width: 240px;
+.detailedDescription {
+  display: flex;
+  margin-top: 5%;
+  height: 60vh;
+  width: 90vw;
+  margin-left: 10vw;
+}
+.aboutPr {
+  width: 50vw;
+  float: right;
+}
+.mockupImg {
+  align-content: center;
+  width: 50vw;
 }
 
-.detailedDescription {
-  height: 90vh;
-  margin-top: 50px;
-  margin-left: 5vw;
+.imageBig {
+  display: block;
+  height: auto;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .visualIdentity {
+  height: 100vh;
   margin-left: 5vw;
-  height: 90vh;
 }
 .visualIdentity .subSection {
   margin-left: 5vw;
@@ -215,6 +241,29 @@ button {
   font-size: 20px;
   right: 10px;
 }
+.uxDetails {
+  margin-left: 5vw;
+}
+
+.toolsList {
+  display: inline-block;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toolsList li {
+  margin-top: 10px;
+}
+
+.toolsList > li::before {
+  content: "▸";
+  position: relative;
+  left: -5px;
+  color: var(--elements);
+  line-height: 12px;
+}
 
 .linkClass:hover {
   color: var(--elements);
@@ -227,8 +276,104 @@ button {
 
 .navigationLinks {
   display: flex;
-  width: 80vw;
-  margin-left: 5vw;
   flex-direction: row;
   justify-content: space-between;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5vh;
+}
+.fullClass {
+  width: 100vw;
+  display: block;
+  height: auto;
+}
+.imageFull {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  width: auto;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .detailedDescription {
+    margin-bottom: 30%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projectWrapper {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .sectionTitle {
+    font-size: 1.5em;
+  }
+  .detailedDescription {
+    height: max-content;
+    margin-left: 2vw;
+  }
+  .fullClass {
+    padding-top: 5vh;
+    height: 50vh;
+  }
+  .visualIdentity {
+    height: 100vh;
+    margin-left: 2vw;
+  }
+
+  .left,
+  .right {
+    margin-left: 0;
+    padding: 5vw;
+  }
+  .contentVisual {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageWrapper img {
+    width: 100vw;
+  }
+
+  .imageBig {
+    height: 8%;
+    width: auto;
+  }
+
+  .left {
+    padding: 0;
+    padding-left: 5vw;
+    line-height: 40px;
+  }
+  .headerFont {
+    font-size: 2em;
+  }
+  .subFont {
+    font-size: 1.5em;
+  }
+  .normalFont {
+    font-size: 0.85em;
+  }
+  .imageFull {
+    height: 90%;
+  }
+
+  .right > button {
+    width: 80%;
+    height: 30px;
+  }
 }

@@ -43,10 +43,6 @@ li:hover > a {
   line-height: 12px;
 }
 
-.subTitle {
-  text-transform: uppercase;
-}
-
 .institutionName {
   font-style: italic;
   margin-left: 20px;
