@@ -3,14 +3,13 @@ import "./Frontend.css";
 import tracktoon from "../tracktoon.png";
 import weather from "../weather.png";
 import she from "../she.png";
+import { SectionTitle } from "../UXPages/Layout";
 
 const Frontend = () => {
   return (
     <div className="frontMain">
       <div className="contentWrap">
-        <div className="sectionTitle" id="titleSec2">
-          Things I've Built
-        </div>
+        <SectionTitle>Things I've Built</SectionTitle>
         <div className="project">
           <div className="projectImage">
             <a
@@ -45,6 +44,7 @@ const Frontend = () => {
                   rel="noreferrer"
                 >
                   <svg
+                    id="githubLogo"
                     width="21"
                     height="23"
                     viewBox="0 0 21 23"
@@ -65,6 +65,7 @@ const Frontend = () => {
                   rel="noreferrer"
                 >
                   <svg
+                    id="linkLogo"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"

@@ -74,7 +74,7 @@ hr {
 .descSpan1 {
   position: absolute;
   right: 40%;
-  top: 40%;
+  top: 30%;
   font-family: "Krona One", sans-serif;
   font-size: 40px;
   margin-bottom: 50px;
@@ -167,16 +167,14 @@ ul {
   .descSpan {
     width: max-content;
     font-size: 22px;
-    top: 20%;
-    left: 0;
-    background-color: #202020;
+    top: 15%;
+    left: 25vw;
   }
   .descSpan1 {
     width: max-content;
     font-size: 22px;
-    top: 23%;
-    left: 0;
-    background-color: #202020;
+    top: 18%;
+    left: 30vw;
   }
   .smallDesc {
     width: 90vw;
@@ -186,5 +184,10 @@ ul {
     display: inline-block;
     margin-left: 0;
     padding-left: 0;
+  }
+  .profilePhoto {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

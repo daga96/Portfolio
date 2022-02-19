@@ -11,13 +11,13 @@ const About = () => {
         <div className="profilePhoto">
           <img src={photo} alt="photo" id="photo" />
         </div>
-
-        <div className="descriptionAbout">
+        <div className="animatedText">
           <span className="descSpan" data-text="Front-end developer">
             Front-end developer
           </span>
           <span className="descSpan1">and UX designer.</span>
-
+        </div>
+        <div className="descriptionAbout">
           <div className="smallDesc">
             <hr></hr>I like to create interesting{" "}
             <span className="colored">designs</span> and interactive{" "}

@@ -3,29 +3,34 @@
   height: 100%;
   overflow: auto;
 
-  margin-right: 5vw;
-  overflow: hidden;
   animation: transitionIn 1s;
 }
 .contentWrap {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin-bottom: 100px;
-}
-
-#titleSec2 {
-  margin-top: 150px;
-  font-weight: bold;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  margin-right: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .picture {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
   width: 550px;
   height: 300px;
   border-radius: 5px;
 }
 
+.picture:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+.projectTitle {
+  margin-right: 0px;
+}
 .project {
   display: flex;
   flex-direction: row;
@@ -43,12 +48,13 @@
   display: flex;
   flex-direction: column;
   width: 40%;
-  padding: 10px;
   margin-top: auto;
   margin-bottom: auto;
   text-align: right;
 }
-
+.projectDescription {
+  text-align: right;
+}
 .projectLinks {
   display: flex;
   justify-content: right;
@@ -62,6 +68,7 @@
   border: none;
   border-bottom: 1px solid;
   margin-right: 0px;
+  margin-top: 20px;
 }
 
 #reverse {
@@ -79,8 +86,115 @@
 
 #reverse .description {
   text-align: left;
+  margin-right: 50px;
 }
 
+#reverse .projectDescription {
+  text-align: left;
+}
 #reverse .line {
+  margin-top: 20px;
   margin-left: 0px;
+}
+#githubLogo:hover path {
+  fill: var(--elements);
+}
+
+#linkLogo:hover path {
+  stroke: var(--elements);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contentWrap {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+  .description {
+    width: 80vw;
+    text-align: center;
+  }
+  .picture {
+    width: 80vw;
+    height: auto;
+  }
+  #reverse {
+    display: flex;
+    flex-direction: column;
+  }
+  #reverse .description {
+    width: 80vw;
+    text-align: center;
+  }
+  .line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #reverse .line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectDescription {
+    text-align: center;
+  }
+  .projectTags {
+    justify-content: center;
+  }
+  #reverse .projectTags {
+    justify-content: center;
+  }
+
+  #reverse .projectLinks {
+    justify-content: right;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .description {
+    width: 80vw;
+    text-align: center;
+  }
+  .picture {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    height: auto;
+  }
+  #reverse {
+    display: flex;
+    flex-direction: column;
+  }
+  #reverse .description {
+    width: 80vw;
+    text-align: center;
+  }
+  .line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #reverse .line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .projectDescription {
+    text-align: center;
+  }
+  .projectTags {
+    justify-content: center;
+  }
+  #reverse .projectTags {
+    justify-content: center;
+  }
+
+  #reverse .projectLinks {
+    justify-content: right;
+  }
 }

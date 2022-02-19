@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Layout.css";
 
 export const SectionTitle = ({ children }) => {
@@ -53,7 +53,7 @@ export const ProjectPage = ({
         <div className="imageWrapper">
           <img src={src} alt={alt} className="mockupImage"></img>
         </div>
-        <div className="projectDescription">
+        <div className="projectDescr">
           <h3 className="uxTitle">UX Challenge {number}</h3>
           <hr className="separator"></hr>
           <div className="projectTitle">{title}</div>
@@ -64,22 +64,23 @@ export const ProjectPage = ({
           </ul>
         </div>
       </div>
-      <div className="detailedDescription">
-        <div className="aboutPr">
-          <SectionTitle>About the project</SectionTitle>
-          <h4 className="subText">{subText}</h4>
-          <div className="textDesc">{text}</div>
-          <div className="uxDetails">
-            <h4>Deliverables:</h4> {screens}
-            <h4>Tools:</h4>{" "}
-            <ul className="toolsList">
-              {tools.map(function (item) {
-                return <li>{item}</li>;
-              })}
-            </ul>
+      <div className="descriptionWrap">
+        <div className="detailedDescription">
+          <div className="aboutPr">
+            <SectionTitle>About the project</SectionTitle>
+            <h4 className="subText">{subText}</h4>
+            <div className="textDesc">{text}</div>
+            <div className="uxDetails">
+              <h4>Deliverables:</h4> {screens}
+              <h4>Tools:</h4>{" "}
+              <ul className="toolsList">
+                {tools.map(function (item) {
+                  return <li>{item}</li>;
+                })}
+              </ul>
+            </div>
           </div>
         </div>
-
         <div className="mockupImg">
           <img src={src2} alt={alt2} className="imageBig"></img>
         </div>

@@ -113,10 +113,11 @@
   height: 50vh;
 }
 
-.projectDescription {
+.projectDescr {
   display: flex;
   flex-direction: column;
   text-align: right;
+  margin-right: 5vw;
 }
 
 .uxTitle {
@@ -162,7 +163,10 @@
 .subText {
   color: var(--elements);
 }
-
+.descriptionWrap {
+  display: flex;
+  flex-direction: row;
+}
 .detailedDescription {
   display: flex;
   margin-top: 5%;
@@ -175,14 +179,14 @@
   float: right;
 }
 .mockupImg {
-  align-content: center;
+  margin: auto;
   width: 50vw;
 }
 
 .imageBig {
   display: block;
   height: auto;
-  width: auto;
+  width: 30%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -269,6 +273,9 @@ button {
   color: var(--elements);
 }
 
+.navigationLinks:hover path {
+  stroke: var(--elements);
+}
 .linkClass svg {
   margin-left: 15px;
   margin-right: 15px;
@@ -308,12 +315,41 @@ button {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .mockupImage {
+    width: 50vw;
+    height: auto;
+  }
   .detailedDescription {
     margin-bottom: 30%;
+  }
+  .imageBig {
+    width: 40%;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .descriptionWrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageBig {
+    padding: 10px;
+    width: 50%;
+  }
+  .detailedDescription {
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .aboutPr {
+    width: 90%;
+  }
+  .textDesc,
+  .subText {
+    width: 90%;
+  }
   .projectWrapper {
     flex-direction: column;
     height: 100vh;
@@ -322,17 +358,15 @@ button {
   .sectionTitle {
     font-size: 1.5em;
   }
-  .detailedDescription {
-    height: max-content;
-    margin-left: 2vw;
-  }
+
   .fullClass {
     padding-top: 5vh;
     height: 50vh;
   }
   .visualIdentity {
     height: 100vh;
-    margin-left: 2vw;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .left,
@@ -347,11 +381,6 @@ button {
 
   .imageWrapper img {
     width: 100vw;
-  }
-
-  .imageBig {
-    height: 8%;
-    width: auto;
   }
 
   .left {

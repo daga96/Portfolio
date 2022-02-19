@@ -1,6 +1,5 @@
 .footerMain {
   width: 100%;
-  background: var(--background);
   color: #dee2e6;
   margin-left: 5vw;
 }
@@ -35,4 +34,26 @@
   display: flex;
   flex-direction: row;
   list-style: none;
+}
+
+@media screen and (max-width: 767px) {
+  .contentWraper {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin: 0;
+  }
+  .logo svg {
+    width: 50px;
+  }
+
+  #aboutContact {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: left;
+  }
 }
