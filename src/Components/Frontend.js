@@ -1,8 +1,8 @@
 import React from "react";
 import "./Frontend.css";
-import tracktoon from "../tracktoon.png";
-import weather from "../weather.png";
-import she from "../she.png";
+import tracktoon from "../assets/tracktoon.png";
+import weather from "../assets/weather.png";
+import she from "../assets/she.png";
 import { SectionTitle } from "../UXPages/Layout";
 
 const Frontend = () => {

@@ -1,7 +1,7 @@
 import React from "react";
-import signin from "../signin.png";
-import full8 from "../full8.png";
-import mockup08 from "../mockup08.png";
+import signin from "../assets/signin.png";
+import full8 from "../assets/full8.png";
+import mockup08 from "../assets/mockup08.png";
 
 import { ProjectPage } from "./Layout";
 

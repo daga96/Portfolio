@@ -2,11 +2,11 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://daga96.github.io/Portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "firebase": "^9.6.7",
     "git": "^0.1.5",
     "particles.js": "^2.0.0",
     "react": "^17.0.2",
@@ -20,8 +20,6 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -1,15 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./UXdesign.css";
-import wallet from "../wallet.png";
-import payment from "../payment.png";
-import profile from "../profile.png";
-import dnd from "../dnd.png";
-import zeus from "../zeus.png";
-import settings from "../settings.png";
-import music from "../music.png";
-import signin from "../signin.png";
-import mis from "../mis.png";
+import wallet from "../assets/wallet.png";
+import payment from "../assets/payment.png";
+import profile from "../assets/profile.png";
+import dnd from "../assets/dnd.png";
+import zeus from "../assets/zeus.png";
+import settings from "../assets/settings.png";
+import music from "../assets/music.png";
+import signin from "../assets/signin.png";
+import mis from "../assets/mis.png";
 import { GalleryItem } from "../UXPages/Layout";
 
 const UXdesign = () => {
@@ -75,6 +74,7 @@ const UXdesign = () => {
           alt="Sign In Screen"
           number="08"
           title="Sign In"
+          link="eight"
         ></GalleryItem>
         <GalleryItem
           src={mis}

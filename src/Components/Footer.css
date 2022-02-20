@@ -29,6 +29,11 @@
 #aboutContact > li {
   margin-bottom: 10px;
   letter-spacing: 1px;
+  text-align: center;
+}
+
+#aboutContact a {
+  cursor: pointer;
 }
 #socialContact {
   display: flex;

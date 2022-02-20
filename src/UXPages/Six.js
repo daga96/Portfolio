@@ -1,7 +1,7 @@
 import React from "react";
-import settings from "../settings.png";
-import full6 from "../full6.png";
-import mockup06 from "../mockup06.png";
+import settings from "../assets/settings.png";
+import full6 from "../assets/full6.png";
+import mockup06 from "../assets/mockup06.png";
 import { ProjectPage } from "./Layout";
 
 const Six = () => {

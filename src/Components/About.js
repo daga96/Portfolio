@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import photo from "../photo.jpg";
+import photo from "../assets/photo.jpg";
 import { SectionTitle } from "../UXPages/Layout";
 
 const About = () => {

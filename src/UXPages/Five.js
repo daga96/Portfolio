@@ -1,7 +1,7 @@
 import React from "react";
-import zeus from "../zeus.png";
-import full5 from "../full5.png";
-import mockup05 from "../mockup05.png";
+import zeus from "../assets/zeus.png";
+import full5 from "../assets/full5.png";
+import mockup05 from "../assets/mockup05.png";
 import { ProjectPage } from "./Layout";
 
 const Five = () => {

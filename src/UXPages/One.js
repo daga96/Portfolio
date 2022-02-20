@@ -1,7 +1,7 @@
 import React from "react";
-import wallet from "../wallet.png";
-import mockup from "../mockup01.png";
-import full from "../full.png";
+import wallet from "../assets/wallet.png";
+import mockup from "../assets/mockup01.png";
+import full from "../assets/full.png";
 import { ProjectPage } from "./Layout";
 
 const One = () => {

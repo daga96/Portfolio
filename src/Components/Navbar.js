@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <div className="navbarMain">
       <div className="navbarLogo">
-        {location.pathname === "/Portfolio" ? (
+        {location.pathname === "/" ? (
           <LinkScroll to="hero" smooth={true}>
             {" "}
             <svg
@@ -33,7 +33,7 @@ export default function Navbar() {
             </svg>
           </LinkScroll>
         ) : (
-          <Link to="/Portfolio">
+          <Link to="/">
             <svg
               width="50"
               height="30"
@@ -84,7 +84,7 @@ export default function Navbar() {
           )}
         </div>
         <ul className={state ? "navMenu active" : "navMenu"}>
-          {location.pathname === "/Portfolio" ? (
+          {location.pathname === "/" ? (
             <li className="link" onClick={handleClick}>
               <LinkScroll to="about" smooth={true} activeClass="active">
                 {" "}
@@ -93,10 +93,10 @@ export default function Navbar() {
             </li>
           ) : (
             <li className="link" onClick={handleClick}>
-              <Link to="/Portfolio">About Me</Link>
+              <Link to="/">About Me</Link>
             </li>
           )}
-          {location.pathname === "/Portfolio" ? (
+          {location.pathname === "/" ? (
             <li className="link" onClick={handleClick}>
               <LinkScroll to="courses" smooth="true">
                 Courses
@@ -104,16 +104,16 @@ export default function Navbar() {
             </li>
           ) : (
             <li className="link" onClick={handleClick}>
-              <Link to="/Portfolio">Courses</Link>
+              <Link to="/">Courses</Link>
             </li>
           )}
           <li className="link" onClick={handleClick}>
-            <Link to="Portfolio/design">UX/UI</Link>
+            <Link to="/design">UX/UI</Link>
           </li>
           <li className="link" onClick={handleClick}>
-            <Link to="Portfolio/frontend">Projects</Link>
+            <Link to="/frontend">Projects</Link>
           </li>
-          {location.pathname === "/Portfolio" ? (
+          {location.pathname === "/" ? (
             <li className="link" onClick={handleClick}>
               <LinkScroll to="contact" smooth={true}>
                 Contact Me{" "}
@@ -121,7 +121,7 @@ export default function Navbar() {
             </li>
           ) : (
             <li className="link" onClick={handleClick}>
-              <Link to="/Portfolio">Contact Me</Link>
+              <Link to="/">Contact Me</Link>
             </li>
           )}
         </ul>

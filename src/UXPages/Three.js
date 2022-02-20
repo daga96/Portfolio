@@ -1,7 +1,7 @@
 import React from "react";
-import profile from "../profile.png";
-import mockup3 from "../mockup03.png";
-import full3 from "../full3.png";
+import profile from "../assets/profile.png";
+import mockup3 from "../assets/mockup03.png";
+import full3 from "../assets/full3.png";
 import { ProjectPage } from "./Layout";
 
 const Three = () => {

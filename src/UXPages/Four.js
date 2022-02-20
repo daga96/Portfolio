@@ -1,7 +1,7 @@
 import React from "react";
-import dnd from "../dnd.png";
-import full4 from "../full4.png";
-import mockup04 from "../mockup04.png";
+import dnd from "../assets/dnd.png";
+import full4 from "../assets/full4.png";
+import mockup04 from "../assets/mockup04.png";
 
 import { ProjectPage } from "./Layout";
 

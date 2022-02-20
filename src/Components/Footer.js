@@ -26,8 +26,19 @@ const Footer = () => {
 
         <ul id="aboutContact">
           <h4>LET'S WORK TOGETHER</h4>
-          <li>dagaluk96@gmail.com</li>
-          <li>Download resume</li>
+          <li>
+            <a href="mailto:dagaluk96@gmail.com" target="_blank">
+              dagaluk96@gmail.com
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1Q5Zpkakt9e6RfOqEopCs7Bbajv_LolSP/view?usp=sharing"
+              target="_blank"
+            >
+              download resume
+            </a>
+          </li>
         </ul>
 
         <ul id="socialContact">

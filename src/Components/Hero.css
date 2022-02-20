@@ -66,6 +66,39 @@
 .nameClass:hover span:nth-child(3) {
   transform: translateY(-50%) scaleY(1);
 }
+.arrowButton {
+  position: absolute;
+  z-index: 10;
+  left: 49%;
+  top: 70%;
+}
+
+.arrowButton:hover path {
+  cursor: pointer;
+  stroke: var(--elements);
+  fill: var(--elements);
+}
+
+.arrowButton:hover path.one {
+  animation: color_anim 1s infinite;
+}
+.arrowButton:hover path.two {
+  animation: color_anim 1s infinite;
+  transform: translateY(-60%);
+  transition: 0.5s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+  50% {
+    fill: var(--elements);
+  }
+  100% {
+    fill: white;
+  }
+}
 
 .helloText {
   position: relative;

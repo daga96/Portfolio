@@ -1,7 +1,7 @@
 import React from "react";
-import music from "../music.png";
-import full7 from "../full7.png";
-import mockup07 from "../mockup07.png";
+import music from "../assets/music.png";
+import full7 from "../assets/full7.png";
+import mockup07 from "../assets/mockup07.png";
 import { ProjectPage } from "./Layout";
 
 const Six = () => {

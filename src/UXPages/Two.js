@@ -1,7 +1,7 @@
 import React from "react";
-import full2 from "../full2.png";
-import payment from "../payment.png";
-import mockup2 from "../mockup02.png";
+import full2 from "../assets/full2.png";
+import payment from "../assets/payment.png";
+import mockup2 from "../assets/mockup02.png";
 
 import { ProjectPage } from "./Layout";
 
