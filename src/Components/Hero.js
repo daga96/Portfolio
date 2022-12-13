@@ -1,7 +1,6 @@
 import React from "react";
 import "./Hero.css";
 import { Link as LinkScroll } from "react-scroll";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,7 +11,7 @@ const Hero = () => {
           Dagmara
           <span>Dagmara</span>
           <span>Dagmara</span>
-          <span>frontend developer and UX Designer. </span>
+          <span>full stack developer and UX Designer. </span>
         </h2>
       </div>
       <LinkScroll to="about" smooth={true}>

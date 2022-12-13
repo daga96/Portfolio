@@ -46,7 +46,6 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/dagmara-luk/"
               target="_blank"
-              rel="noreferrer"
               title="LinkedIn"
             >
               <img
@@ -60,7 +59,6 @@ const Footer = () => {
             <a
               href="https://github.com/daga96"
               target="_blank"
-              rel="noreferrer"
               title="Github"
             >
               <img
